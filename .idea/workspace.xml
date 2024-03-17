@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="40fa9d1c-c65a-4155-be44-3b6682246849" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/cost-cal" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="cost-cal" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2anf2YdzMeTa0Vy2jRAMN88O2T1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/miyok/IdeaProjects/demo&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\miyok\IdeaProjects\final\src\main\resources\templates" />
+      <recent name="C:\Users\miyok\IdeaProjects\final\src\main\resources\static\js" />
+      <recent name="C:\Users\miyok\IdeaProjects\final\src\main\java\jp\ac\aoyama\it\it_lab_3\finalex" />
+      <recent name="C:\Users\miyok\IdeaProjects\final" />
+      <recent name="C:\Users\miyok\IdeaProjects\final\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\miyok\IdeaProjects\final\src\main\resources\static" />
+      <recent name="C:\Users\miyok\IdeaProjects\final\src\main\resources\templates" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="jp.ac.aoyama.it.it_lab_3.finalex" />
+      <recent name="jp.ac.aoyama.it.it_lab_3" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.FinalApplication">
+    <configuration name="FinalApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jp.ac.aoyama.it.it_lab_3.finalex.FinalApplication" />
+      <module name="final.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jp.ac.aoyama.it.it_lab_3.finalex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlanOutput" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jp.ac.aoyama.it.it_lab_3.finalex.PlanOutput" />
+      <module name="final.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jp.ac.aoyama.it.it_lab_3.finalex.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FinalApplication" />
+        <item itemvalue="Application.PlanOutput" />
+        <item itemvalue="Application.PlanOutput" />
+        <item itemvalue="Application.FinalApplication" />
+        <item itemvalue="Application.PlanOutput" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="40fa9d1c-c65a-4155-be44-3b6682246849" name="Changes" comment="" />
+      <created>1704959057198</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704959057198</updated>
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <option name="closed" value="true" />
+      <created>1704959383171</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1704959383171</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add files">
+      <option name="closed" value="true" />
+      <created>1704961987154</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1704961987154</updated>
+    </task>
+    <task id="LOCAL-00003" summary="delete files&#10;申請者フォーム完了&#10;css途中">
+      <option name="closed" value="true" />
+      <created>1705246622284</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705246622284</updated>
+    </task>
+    <task id="LOCAL-00004" summary="申請者フォームcss完了">
+      <option name="closed" value="true" />
+      <created>1705403533288</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705403533288</updated>
+    </task>
+    <task id="LOCAL-00005" summary="申請者フォームcss完了">
+      <option name="closed" value="true" />
+      <created>1705403642492</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705403642492</updated>
+    </task>
+    <task id="LOCAL-00006" summary="申請者フォーム,出張計画フォームcss完了">
+      <option name="closed" value="true" />
+      <created>1705409381760</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1705409381760</updated>
+    </task>
+    <task id="LOCAL-00007" summary="htmlファイル追加">
+      <option name="closed" value="true" />
+      <created>1705497778955</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1705497778955</updated>
+    </task>
+    <task id="LOCAL-00008" summary="出張者入力フォームのcss適応&#10;申請者→出張者の遷移">
+      <option name="closed" value="true" />
+      <created>1705557069089</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1705557069089</updated>
+    </task>
+    <task id="LOCAL-00009" summary="トップページ→申請者→出張者の画面遷移&#10;トップページ→出張計画の画面遷移&#10;出張者の駅すぱあと実装">
+      <option name="closed" value="true" />
+      <created>1705582678190</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1705582678190</updated>
+    </task>
+    <task id="LOCAL-00010" summary="idの変更">
+      <option name="closed" value="true" />
+      <created>1705586245251</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1705586245251</updated>
+    </task>
+    <task id="LOCAL-00011" summary="不要なファイルの削除&#10;トップページへのリダイレクト&#10;デザインの細かい変更">
+      <option name="closed" value="true" />
+      <created>1706059222146</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1706059222146</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="add files" />
+    <MESSAGE value="delete files&#10;申請者フォーム完了&#10;css途中" />
+    <MESSAGE value="申請者フォームcss完了" />
+    <MESSAGE value="申請者フォーム,出張計画フォームcss完了" />
+    <MESSAGE value="htmlファイル追加" />
+    <MESSAGE value="出張者入力フォームのcss適応&#10;申請者→出張者の遷移" />
+    <MESSAGE value="トップページ→申請者→出張者の画面遷移&#10;トップページ→出張計画の画面遷移&#10;出張者の駅すぱあと実装" />
+    <MESSAGE value="idの変更" />
+    <MESSAGE value="不要なファイルの削除&#10;トップページへのリダイレクト&#10;デザインの細かい変更" />
+    <option name="LAST_COMMIT_MESSAGE" value="不要なファイルの削除&#10;トップページへのリダイレクト&#10;デザインの細かい変更" />
+  </component>
+</project>
