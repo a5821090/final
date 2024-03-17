@@ -1,0 +1,56 @@
+Index: src/main/java/jp/ac/aoyama/it/it_lab_3/finalex/BusinessTripRestController.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><<<<<<< HEAD\n//15821090三代川桃子\r\npackage jp.ac.aoyama.it.it_lab_3.finalex;\r\n\r\nimport org.springframework.web.bind.annotation.PostMapping;\r\nimport org.springframework.web.bind.annotation.RequestBody;\r\nimport org.springframework.web.bind.annotation.RestController;\r\nimport jp.ac.aoyama.it.it_lab_3.business_trip_dsl_sample.BusinessTripModel;\r\nimport org.junit.jupiter.api.AfterEach;\r\nimport org.junit.jupiter.api.BeforeEach;\r\nimport org.kie.api.KieServices;\r\nimport org.kie.api.runtime.KieContainer;\r\nimport org.kie.api.runtime.KieSession;\r\nimport org.springframework.stereotype.Controller;\r\nimport org.springframework.ui.Model;\r\nimport org.springframework.web.bind.annotation.GetMapping;\r\nimport org.springframework.web.bind.annotation.ModelAttribute;\r\nimport org.springframework.web.bind.annotation.RequestParam;\r\n\r\n\r\n@RestController\r\npublic class BusinessTripRestController {\r\n\r\n    private KieSession ksession;\r\n    private static final String GROUP_ID=\"jp.ac.aoyama.it.it_lab_3\";\r\n    private static final String ARTIFACT_Id=\"business_trip_dsl_sample\";\r\n    private static final String VERSION=\"1.0.0\";\r\n\r\n    @BeforeEach\r\n    public void initialize(){\r\n        KieServices ks=KieServices.Factory.get();\r\n        KieContainer kc=ks.newKieContainer(ks.newReleaseId(GROUP_ID,ARTIFACT_Id,VERSION));\r\n        ksession=kc.newKieSession();\r\n    }\r\n    @AfterEach\r\n    public void dispose(){\r\n        ksession.dispose();\r\n    }\r\n    public BusinessTripModel insertAndExecute(BusinessTripModel btm){\r\n=======\n//15821093\r\n//山岡優希\r\npackage jp.ac.aoyama.it.it_lab_3.finalex;\r\n\r\nimport jp.ac.aoyama.it.it_lab_3.business_trip_dsl_sample.BusinessTripModel;\r\nimport org.kie.api.KieServices;\r\nimport org.kie.api.runtime.KieContainer;\r\nimport org.kie.api.runtime.KieSession;\r\nimport org.springframework.web.bind.annotation.PostMapping;\r\nimport org.springframework.web.bind.annotation.RequestBody;\r\nimport org.springframework.web.bind.annotation.RestController;\r\n\r\nimport java.util.Map;\r\n\r\n@RestController\r\npublic class BusinessTripRestController {\r\n    private KieSession ksession;\r\n    private static final String GROUP_ID = \"jp.ac.aoyama.it.it_lab_3\";\r\n    private static final String ARTIFACT_Id = \"business_trip_dsl_sample\";\r\n    private static final String VERSION = \"1.0.0-SNAPSHOT\";\r\n    public void initialize() {//初期化する\r\n        KieServices ks = KieServices.Factory.get();\r\n        KieContainer kc = ks.newKieContainer(ks.newReleaseId(GROUP_ID, ARTIFACT_Id, VERSION));\r\n        ksession = kc.newKieSession();\r\n    }\r\n    public void dispose() {\r\n        ksession.dispose();\r\n    }//ksessionをとじる\r\n    //BusinessTripModelの定義を持ってくる\r\n    public BusinessTripModel insertAndExecute(BusinessTripModel btm) {\r\n>>>>>>> 6a13e6f18380e488fb02758c261cf4d9585013c8\n        ksession.insert(btm);\r\n        ksession.fireAllRules();\r\n        return btm;\r\n    }\r\n<<<<<<< HEAD\n    @PostMapping(\"/calc_daily_allowance2\")\r\n    public DailyAllowanceModel calcDailyAllowance(@RequestBody DailyAllowanceModel model) {\r\n        initialize();\r\n        BusinessTripModel btm=new BusinessTripModel();\r\n\r\n        btm.setName(model.getName());\r\n        btm.setTravelHours(model.getTravelHours());\r\n        btm=insertAndExecute(btm);\r\n        model.setDailyAllowance(btm.getDailyAllowance());\r\n        dispose();\r\n        return model;\r\n    }\r\n\r\n=======\n\r\n    @PostMapping(\"/calc_daily_allowance2\")\r\n    public DailyAllowanceModel calcDailyAllowance(@RequestBody DailyAllowanceModel model) {\r\n        System.out.println(model.getName());\r\n        System.out.println(model.getTravelHours());\r\n\r\n        //初期化、BusinessTripModelの初期化\r\n        initialize();\r\n        BusinessTripModel btm = new BusinessTripModel();\r\n        btm.setName(model.getName());\r\n        btm.setTravelHours(model.getTravelHours());\r\n        btm = insertAndExecute(btm);\r\n        //日当計算\r\n        int dailyAllowance = btm.getDailyAllowance();\r\n        //modelに値を入れて返す\r\n        model.setDailyAllowance(dailyAllowance);\r\n        dispose();\r\n\r\n        System.out.println(model.getDailyAllowance());\r\n        return model;\r\n    }\r\n\r\n    @PostMapping(\"/make_excel\")\r\n    public void createExcel(@RequestBody Map<String, Object> data_set) {\r\n        makeExcel(data_set);\r\n        Ex_final.MakeReq(data_set);\r\n        System.out.println(\"post\");\r\n    }\r\n\r\n    public void makeExcel(Map<String, Object> data_set){\r\n        String syozoku1 = (String)data_set.get(\"Syozoku\");\r\n        String gakubu1 = (String)data_set.get(\"Gakubu\");\r\n        String Gakka = (String)data_set.get(\"Gakka\");\r\n        String Syokumie = (String)data_set.get(\"Syokumei\");\r\n        String Shimei = (String)data_set.get(\"Shimei\");\r\n        String Syozoku_2 = (String)data_set.get(\"Syozoku_2\");\r\n        String Shimei_2 = (String)data_set.get(\"Syozoku\");\r\n        String Mokuteki = (String)data_set.get(\"Mokuteki\");\r\n        String Youmuchi = (String)data_set.get(\"Youmuchi\");\r\n        String Youmusaki = (String)data_set.get(\"Youmusaki\");\r\n        String Nittei = (String)data_set.get(\"Nittei\");\r\n        String Syuttyouzikan = (String)data_set.get(\"Syuttyouzikan\");\r\n\r\n\r\n\r\n\r\n\r\n    }\r\n>>>>>>> 6a13e6f18380e488fb02758c261cf4d9585013c8\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/jp/ac/aoyama/it/it_lab_3/finalex/BusinessTripRestController.java b/src/main/java/jp/ac/aoyama/it/it_lab_3/finalex/BusinessTripRestController.java
+--- a/src/main/java/jp/ac/aoyama/it/it_lab_3/finalex/BusinessTripRestController.java	
++++ b/src/main/java/jp/ac/aoyama/it/it_lab_3/finalex/BusinessTripRestController.java	
+@@ -1,4 +1,4 @@
+-<<<<<<< HEAD
++/*<<<<<<< HEAD
+ //15821090三代川桃子
+ package jp.ac.aoyama.it.it_lab_3.finalex;
+ 
+@@ -37,7 +37,7 @@
+         ksession.dispose();
+     }
+     public BusinessTripModel insertAndExecute(BusinessTripModel btm){
+-=======
++=======*/
+ //15821093
+ //山岡優希
+ package jp.ac.aoyama.it.it_lab_3.finalex;
+@@ -68,12 +68,12 @@
+     }//ksessionをとじる
+     //BusinessTripModelの定義を持ってくる
+     public BusinessTripModel insertAndExecute(BusinessTripModel btm) {
+->>>>>>> 6a13e6f18380e488fb02758c261cf4d9585013c8
++//>>>>>>> 6a13e6f18380e488fb02758c261cf4d9585013c8
+         ksession.insert(btm);
+         ksession.fireAllRules();
+         return btm;
+     }
+-<<<<<<< HEAD
++//<<<<<<< HEAD
+     @PostMapping("/calc_daily_allowance2")
+     public DailyAllowanceModel calcDailyAllowance(@RequestBody DailyAllowanceModel model) {
+         initialize();
+@@ -87,7 +87,7 @@
+         return model;
+     }
+ 
+-=======
++//=======
+ 
+     @PostMapping("/calc_daily_allowance2")
+     public DailyAllowanceModel calcDailyAllowance(@RequestBody DailyAllowanceModel model) {
+@@ -136,5 +136,5 @@
+ 
+ 
+     }
+->>>>>>> 6a13e6f18380e488fb02758c261cf4d9585013c8
++//>>>>>>> 6a13e6f18380e488fb02758c261cf4d9585013c8
+ }
