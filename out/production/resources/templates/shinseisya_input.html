@@ -1,0 +1,50 @@
+<!--15821090三代川桃子-->
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>申請者入力フォーム</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer type="text/javascript" src="js/input.js"></script>
+</head>
+<body>
+<div class="wrapper">
+<h1>申請者入力</h1>
+   <p>申請者情報を入力し、次の入力項目へ進んでください。</p>
+    <form method="post" action="/shinseisya_input">
+    <div class="text_input">
+        <label for="syozoku">所属</label>
+            <input type="text" id="syozoku" name="syozoku"/>
+    </div>
+        <div class="text_input">
+            <label for="gakubu">学部</label>
+            <input type="text" id="gakubu" name="gakubu"/>
+        </div>
+        <div class="text_input">
+            <label for="gakka">学科</label>
+            <input type="text" id="gakka" name="gakka"/>
+        </div>
+        <div class="pulldown">
+            <label for="job_title">職名</label>
+            <select id="job_title" name="job_title">
+                <option value="">---選択してください---</option>
+                <option value="professor">教授</option>
+                <option value="associate_professor">准教授</option>
+                <option value="assistant_professor">助教</option>
+                <option value="research_assistant">助手</option>
+            </select>
+        </div>
+        <div class="text_input">
+            <label for="name">氏名</label>
+            <input type="text" id="name" name="name"/>
+        </div>
+        <div class="btn">
+    <button class="decorated-btn click-down" id="submit" type="submit" >次の入力項目</button>
+        </div>
+        <br>
+
+    </form>
+</div>
+</body>
+</html>

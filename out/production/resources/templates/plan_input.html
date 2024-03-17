@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>出張計画入力フォーム</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="/js/plan.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="wrapper">
+<h1>出張計画入力フォーム</h1>
+<form>
+    <div class="text_input">
+    <p>出張日数を入力してください</p>
+    <input type="number" id="plan" required min="1"><br>
+    </div>
+    <div class="btn">
+    <button class="decorated-btn click-down" type="button" onclick="generateForm()">入力フォーム生成</button>
+    </div>
+    <br>
+</form>
+<div id="result"></div>
+</div>
+</body>
+
+</html>

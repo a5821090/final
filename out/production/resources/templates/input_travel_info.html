@@ -1,0 +1,93 @@
+<!--final_宮田明-->
+<!DOCTYPE HTML>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="./js/bts.js"></script>
+    <link class="css" rel="stylesheet" type="text/css" href="expCss/expGuiStation.css">
+    <link class="css" rel="stylesheet" type="text/css" href="expCss/expGuiCourse.css">
+    <link class="css" rel="stylesheet" type="text/css" href="expCss/expGuiDateTime.css">
+    <script src="expJs/expGuiStation.js?key=dev_QdfXE65U9zva" charset="UTF-8"></script>
+    <script src="expJs/expGuiCourse.js?key=dev_QdfXE65U9zva" charset="UTF-8"></script>
+    <script src="expJs/expGuiDateTime.js" charset="UTF-8"></script>
+    <title>出張者入力</title>
+</head>
+
+<body>
+<div class="wrapper">
+<h1>出張者入力</h1>
+<form>
+    <div class="text_input">
+        <label for="Syozoku_2">所属機関名・部局：</label>
+        <input type="text" id="Syozoku_2" name="department" />
+    </div>
+    <div class="text_input">
+        <label for="Syokumei_2">職名：</label>
+        <input type="text" id="Syokumei_2" name="job" />
+    </div>
+    <div class="text_input">
+        <label for="Shimei_2">氏名：</label>
+        <input type="text" id="Shimei_2" name="name" />
+    </div>
+    <div class="text_input">
+        <label for="Mokuteki">出張目的：</label><br />
+        <input type="text" id="Mokuteki" name="purpose">
+    </div>
+    <div class="text_input">
+        <label for="Youmuchi">用務地：</label>
+        <input type="text" id="Youmuchi" name="place" />
+    </div>
+    <div class="text_input">
+        <label for="Youmusaki">用務先：</label>
+        <input type="text" id="Youmusaki" name="field" />
+    </div>
+    <div class="text_input">
+        <label for="Ddatetime">出発日時：</label><br />
+        <input type="date" id="Ddatetime" name="datetime"></input>
+    </div>
+    <div class="text_input">
+        <label for="Adatetime">到着日時：</label><br />
+        <input type="date" id="Adatetime" name="datetime"></input>
+    </div>
+    <div class="text_input">
+        <label for="Syuttyouzikan">出張時間（日帰りの場合）</label><br />
+        <input type="text" id="Syuttyouzikan" name="time">
+    </div>
+    <div class="text_input">
+        <label for="start">出発地</label><br />
+        <input type="text" id="start" name="start">
+    </div>
+    <div class="text_input">
+        <label for="end">到着地</label><br />
+        <input type="text" id="end" name="end">
+    </div>
+    <br />
+    出発日時:
+    <div id="dateTime"></div>
+    出発駅:
+    <div id="station1"></div>
+    到着駅:
+    <div id="station2"></div>
+    <div class='btn'>
+    <button class='decorated-btn click-down' id="select_button" type="button">経路選択</button>
+    </div>
+    <div id="result"></div>
+    <h3>選択した経路</h3>
+    <div id="select">
+
+
+    </div>
+    <div class="btn">
+    <button class="decorated-btn click-down" id="calc_daily_allowance_button" type="button">実行</button>
+    </div>
+    <br>
+</form>
+    <div class="btn"><button class="decorated-btn click-down" onclick="location.href='http://localhost:8080/top'" >トップに戻る</button></div><br>
+</div>
+</body>
+
+</html>
