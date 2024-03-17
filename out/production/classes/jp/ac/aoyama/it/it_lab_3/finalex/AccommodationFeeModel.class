@@ -1,0 +1,66 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by FernFlower decompiler)
+//
+
+package jp.ac.aoyama.it.it_lab_3.finalex;
+
+public class AccommodationFeeModel {
+    private String name = "";
+    private String jobTitle = "教授";
+    private String travelCategory = "国内";
+    private int numberOgNights = 0;
+    private String cityType = "指定都市";
+    private int accommodationFee = 0;
+
+    AccommodationFeeModel() {
+    }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getJobTitle() {
+        return this.jobTitle;
+    }
+
+    public void setJobTitle(String jobTitle) {
+        this.jobTitle = jobTitle;
+    }
+
+    public String getTravelCategory() {
+        return this.travelCategory;
+    }
+
+    public void setTravelCategory(String travelCategory) {
+        this.travelCategory = travelCategory;
+    }
+
+    public int getNumberOgNights() {
+        return this.numberOgNights;
+    }
+
+    public void setNumberOgNights(int numberOgNights) {
+        this.numberOgNights = numberOgNights;
+    }
+
+    public String getCityType() {
+        return this.cityType;
+    }
+
+    public void setCityType(String cityType) {
+        this.cityType = cityType;
+    }
+
+    public int getAccommodationFee() {
+        return this.accommodationFee;
+    }
+
+    public void setAccommodationFee(int accommodationFee) {
+        this.accommodationFee = accommodationFee;
+    }
+}
