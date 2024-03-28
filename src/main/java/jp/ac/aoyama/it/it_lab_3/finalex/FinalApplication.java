@@ -1,4 +1,4 @@
-//15821090
+//15821090三代川桃子
 package jp.ac.aoyama.it.it_lab_3.finalex;
 
 import org.springframework.boot.SpringApplication;
